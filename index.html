@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chatbot</title>
+    <link rel="icon" href="data:,">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button id="sidebar-new-chat">+ New Chat</button>
+                <h2>Recent Chats</h2>
+            </div>
+
+            <div id="recent-chats" class="recent-chats">
+            </div>
+        </aside>
+
+        <div class="chat-container">
+
+            <div class="chat-header">
+                <h1>AI Study Assistant 📚</h1>
+                <p>Your personal learning assistant</p>
+            </div>
+
+            <div id="chat-box" class="chat-box">
+                <div class="message bot-message">
+                    Hi! 👋 I'm your AI Study Assistant. What would you like to learn today?
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input
+                    type="text"
+                    id="message-input"
+                    placeholder="Ask a study question..."
+                >
+
+                <button id="send-button" aria-label="Send message">↑</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
